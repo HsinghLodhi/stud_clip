@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:focusableInTouchMode="true"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    tools:context=".ui.player.PlayerProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="@dimen/dim10"
+        android:paddingEnd="@dimen/dim10">
+
+        <include
+            layout="@layout/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="@dimen/dim50"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="end"
+            android:text="@string/skip_txt"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim15"
+        android:layout_marginTop="@dimen/dim10"
+        android:fontFamily="@font/rubik_semibold"
+        android:text="@string/profile_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp32" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dim15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim20"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/school_type_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/round_light_theme_bg"
+                android:paddingStart="@dimen/dim6"
+                android:paddingTop="@dimen/dim6"
+                android:paddingEnd="@dimen/dim6"
+                android:paddingBottom="@dimen/dim6"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/school_type_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:theme="@style/MatchSpinnerTheme" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim20"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/school_team_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <!-- <TextView
+                 android:id="@+id/tv_search_school"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/dim15"
+                 android:background="@drawable/round_light_theme_bg"
+                 android:drawableEnd="@drawable/ic_search_white"
+                 android:drawablePadding="@dimen/dim5"
+                 android:fontFamily="@font/rubik_regular"
+                 android:hint="@string/search_school_hint_txt"
+                 android:padding="@dimen/dim10"
+                 android:textColor="@color/white"
+                 android:textColorHint="@color/grey"
+                 android:textSize="@dimen/sp16"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toBottomOf="@+id/include" />-->
+
+            <!-- android:drawableEnd="@drawable/ic_search_white"
+                android:drawablePadding="@dimen/dim5"-->
+            <EditText
+                android:id="@+id/edit_search_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim15"
+                android:background="@drawable/round_light_theme_bg"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="@string/search_school_hint_txt"
+                android:padding="@dimen/dim10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim20"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Class"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <EditText
+                android:id="@+id/edit_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/round_light_theme_bg"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="@string/enter_class_txt"
+                android:inputType="textCapSentences|textPersonName"
+                android:padding="@dimen/dim10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim20"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="@string/ht_txt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+
+                    <!-- <TextView
+                         android:id="@+id/tv_ht"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/dim10"
+                         android:background="@drawable/round_light_theme_bg"
+                         android:fontFamily="@font/rubik_regular"
+                         android:padding="@dimen/dim10"
+                         android:textColorHint="@color/grey"
+                         android:hint="@string/ht_txt"
+                         android:textColor="@color/white"
+                         android:textSize="@dimen/sp16" />-->
+                    <EditText
+                        android:id="@+id/edit_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim10"
+                        android:background="@drawable/round_light_theme_bg"
+                        android:fontFamily="@font/rubik_regular"
+                        android:hint="@string/enter_height_hint_txt"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/dim10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim20"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="@string/wt_txt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+
+                    <EditText
+                        android:id="@+id/edit_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim10"
+                        android:background="@drawable/round_light_theme_bg"
+                        android:fontFamily="@font/rubik_regular"
+                        android:hint="Enter Weight"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/dim10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim20"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Position"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/round_light_theme_bg"
+                android:paddingStart="@dimen/dim6"
+                android:paddingEnd="@dimen/dim6"
+                >
+
+                <EditText
+                    android:id="@+id/position_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_light_theme_bg"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/enter_position"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:padding="@dimen/dim10"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/sp16"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim20"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/highlight_video_link_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <EditText
+                android:id="@+id/edit_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/round_light_theme_bg"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="@string/your_video_link_hint_txt"
+                android:inputType="textUri"
+                android:padding="@dimen/dim10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp16" />
+
+            <Button
+                android:id="@+id/button_lets_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim20"
+                android:layout_marginBottom="@dimen/dim20"
+                android:background="@drawable/round_red_background"
+                android:fontFamily="@font/rubik_semibold"
+                android:text="@string/let_s_start_btn_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

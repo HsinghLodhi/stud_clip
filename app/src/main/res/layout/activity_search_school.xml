@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:paddingStart="@dimen/dim10"
+    android:paddingEnd="@dimen/dim10"
+    tools:context=".ui.player.SearchSchoolActivity">
+
+    <RelativeLayout
+        android:id="@+id/rv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="@dimen/dim5"
+        android:paddingEnd="@dimen/dim5"
+        android:layout_marginTop="@dimen/dim15"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/search_school_title_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp17" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edit_search_school"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim15"
+        android:background="@drawable/round_light_theme_bg"
+        android:drawableEnd="@drawable/ic_search_white"
+        android:drawablePadding="@dimen/dim5"
+        android:fontFamily="@font/rubik_regular"
+        android:hint="@string/search_school_hint_txt"
+        android:inputType="textPersonName|textCapSentences"
+        android:paddingStart="@dimen/dim15"
+        android:paddingTop="@dimen/dim10"
+        android:paddingEnd="@dimen/dim10"
+        android:paddingBottom="@dimen/dim10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_title" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/dim10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_search_school">
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/no_result_found_txt"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp16" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_light_theme_bg"
+            android:paddingBottom="@dimen/dim10" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

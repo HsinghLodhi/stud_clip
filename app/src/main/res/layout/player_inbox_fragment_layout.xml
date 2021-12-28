@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <TextView
+        android:id="@+id/tv_Top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim15"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingTop="@dimen/dim10"
+        android:text="@string/inbox"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+
+    <RelativeLayout
+        android:id="@+id/rlSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim40"
+        android:layout_below="@+id/tv_Top"
+        android:layout_marginStart="@dimen/dim15"
+        android:layout_marginTop="@dimen/dim15"
+        android:layout_marginEnd="@dimen/dim15"
+        android:background="@drawable/round_light_theme_bg"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/searchImage"
+            android:background="@null"
+            android:hint="@string/search"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:padding="@dimen/dim10"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+        <ImageView
+            android:id="@+id/searchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim10"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/rubik_medium"
+        android:text="No Result Found"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/sp16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChatThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSearchView"
+        android:layout_marginStart="@dimen/dim15"
+        android:layout_marginTop="@dimen/dim40"
+        android:layout_marginEnd="@dimen/dim15"
+        android:background="@drawable/round_light_theme_bg"
+        android:paddingBottom="@dimen/dim10"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+</RelativeLayout>

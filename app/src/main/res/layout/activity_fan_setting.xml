@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:id="@+id/rootLayout"
+    tools:context=".ui.common.SettingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim15">
+
+        <LinearLayout
+            android:id="@+id/backll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="top"
+            android:paddingStart="0dp"
+            android:paddingTop="@dimen/dim10"
+            android:paddingEnd="@dimen/dim10">
+            <include layout="@layout/back_button" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/rubik_medium"
+            android:paddingTop="@dimen/dim10"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTop"
+        android:layout_marginStart="@dimen/dim15"
+        android:layout_marginTop="@dimen/dim15"
+        android:layout_marginEnd="@dimen/dim15"
+        android:background="@drawable/round_light_theme_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dim15">
+
+
+        <RelativeLayout
+            android:id="@+id/rlChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tvChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/ivArrow"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="start|center"
+                android:text="@string/change_password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="@dimen/dim20"
+                android:layout_height="@dimen/dim20"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/right_arrow"
+                app:tint="@color/grey" />
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginTop="@dimen/dim15"
+            android:layout_marginEnd="@dimen/dim5" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/tvVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/ivVideoSwitch"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/new_video"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvVideo"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/players_post"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sp10" />
+
+            <ImageView
+                android:id="@+id/ivVideoSwitch"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/switch_on" />
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="@dimen/dim5" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/ivMessageSwitch"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMessage"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/someone_sends_a_msg"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sp10" />
+
+            <ImageView
+                android:id="@+id/ivMessageSwitch"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/switch_on" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

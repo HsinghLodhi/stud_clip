@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">StudClips</string>
+    <string name="studs_clips_title">Studs Clips</string>
+    <string name="sign_in_title">Sign in</string>
+    <string name="skip_txt">Skip</string>
+    <string name="user_email_txt">User Email</string>
+    <string name="enter_email_txt">Enter your email</string>
+    <string name="enter_password_txt">Enter password</string>
+    <string name="don_t_have_an_account_txt">Don\'t have an account?</string>
+    <string name="register_here_txt">Register Here</string>
+    <string name="forget_password_txt">Forgot Password</string>
+    <string name="remember_me_txt">Remember me</string>
+    <string name="terms_and_condition_txt">Terms &amp; Condition</string>
+    <string name="terms_and_condition_underline_txt"><u>Terms and Condition</u></string>
+    <string name="privacy_policy_txt_underline"><u>Privacy Policy</u></string>
+    <string name="privacy_policy_txt">Privacy Policy</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="please_enter_your_registered_email">Please enter your registered email \n to reset your password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="add_your_profile_photo_txt">Add your profile photo</string>
+    <string name="update_your_profile_photo_txt">Update your profile photo</string>
+    <string name="sign_up_txt">Sign up</string>
+    <string name="name_txt">Name</string>
+    <string name="first_name_txt">First Name</string>
+    <string name="last_name_txt">Last Name</string>
+    <string name="enter_your_email_txt">Enter your email</string>
+    <string name="email_txt">Email</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="login">Login</string>
+    <string name="state_txt">State</string>
+    <string name="city_txt">City</string>
+    <string name="subscription_txt">Subscription</string>
+    <string name="txt_sub">Your full athletic profile will be visible to fans only after subscription.</string>
+    <string name="txt_along">Along with following benefit</string>
+    <string name="txt_sub1">Create full athletic profile</string>
+    <string name="txt_sub2">30 second video clip</string>
+    <string name="txt_sub3">Chat with fans</string>
+    <string name="subscription_now">Subscribe Now</string>
+    <string name="restore_purchase"><u>Restore Purchases</u></string>
+    <string name="by_clicking">By clicking Continue your payment will be charged to your account. Subscription will automatically renew for the same package length unless auto-renew is turned off and you cancel at least 24 hours before the end of your current period. You agree to our Terms and Privacy Policy. All purchases are none non-refundable.</string>
+    <string name="filters">Filters</string>
+    <string name="sort_by">Sort by</string>
+    <string name="by_sport">By Sport</string>
+    <string name="clear_all">Clear All</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="profile_txt">Profile</string>
+    <string name="school_type_txt">School Type</string>
+    <string name="school_team_txt">School/Team</string>
+    <string name="enter_class_txt">Enter Class</string>
+    <string name="enter_position">Enter Position</string>
+    <string name="ht_txt">HT</string>
+    <string name="wt_txt">WT</string>
+    <string name="highlight_video_link_txt">Highlight Video Link</string>
+    <string name="your_video_link_hint_txt">Your Video Link</string>
+    <string name="let_s_start_btn_txt">Let’s Start</string>
+    <string name="inbox">Inbox</string>
+    <string name="home">Home</string>
+    <string name="topten">TopTen</string>
+    <string name="uploadvideo">UploadVideo</string>
+    <string name="user">User</string>
+    <string name="search_user">Search Users</string>
+
+    <string-array name="sport_array">
+        <item>Select</item>
+        <item>Select One</item>
+        <item>Select Two</item>
+        <item>Select Three</item>
+        <item>Select Four</item>
+    </string-array>
+
+    <string-array name="position_array">
+        <item>Select Any Position</item>
+        <item>DB</item>
+        <item>DL</item>
+        <item>LB</item>
+        <item>QB</item>
+        <item>RB</item>
+        <item>WR</item>
+        <item>OL</item>
+        <item>K</item>
+        <item>TE</item>
+    </string-array>
+
+    <!--<string-array name="arr_sort_by">
+        <item>Please select sort by</item>
+        <item>View most liked</item>
+        <item>Select One</item>
+        <item>Select Two</item>
+        <item>Select Three</item>
+        <item>Select Four</item>
+    </string-array>-->
+
+    <string-array name="sport_array_by_hint">
+        <item>Please select sport by</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Soccer</item>
+        <item>Lacrosse</item>
+        <item>Softball</item>
+    </string-array>
+
+
+    <string-array name="arr_sort_by_hint">
+        <item>Please select sort by</item>
+        <item>View most liked</item>
+        <item>Select One</item>
+        <item>Select Two</item>
+        <item>Select Three</item>
+        <item>Select Four</item>
+    </string-array>
+
+    <string-array name="sort_by_arr">
+        <item>Please select sort by</item>
+        <item>View most liked</item>
+        <item>View highest rated</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="no_result_found_txt">No Result Found</string>
+    <string name="search_school_hint_txt">School</string>
+    <string name="enter_height_hint_txt">Enter Height</string>
+    <string name="search_by_name_hint_txt">Search by Name</string>
+    <string name="views">Views</string>
+    <string name="_2_hrs">2 hrs</string>
+    <string name="_106">106</string>
+    <string name="_268_likes">268 Likes</string>
+    <string name="top_10">Top 10</string>
+    <string name="search_school_title_txt">Search School</string>
+    <string name="edit_txt">Edit</string>
+    <string name="videos_txt">Videos</string>
+    <string name="reviews_txt">Reviews</string>
+    <string name="likes_txt">Likes</string>
+    <string name="manage_payment_options_txt">Manage Payment Options</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_password_txt">Your new password must be different From previous used password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="setting">Settings</string>
+    <string name="todo">TODO</string>
+    <string name="likes">Likes</string>
+    <string name="someone_likes">Someone likes your video</string>
+    <string name="ratting">Ratings</string>
+    <string name="someone_rates">Someone rates your video</string>
+    <string name="new_video">New Video</string>
+    <string name="players_post">Players post a new video</string>
+    <string name="message">Message</string>
+    <string name="someone_sends_a_msg">Someone sends a direct message</string>
+    <string name="notification">Notifications</string>
+    <string name="add_video">Add Video</string>
+    <string name="write_a_caption">Write a caption..</string>
+    <string name="uploadTxt">Upload</string>
+    <string name="lets_upload_video">Lets Upload Video</string>
+    <string name="dummy_txt">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="error_title_txt">Error</string>
+
+    <!--Banner Alert Text-->
+    <string name="alert_message_empty_email">Please enter email address.</string>
+    <string name="alert_message_invalid_email">Please enter valid email address.</string>
+    <string name="alert_message_empty_old_pass">Please enter old password.</string>
+    <string name="alert_message_empty_pass">Please enter new password.</string>
+    <string name="alert_message_empty_first_name">Please enter first name.</string>
+    <string name="alert_message_empty_last_name">Please enter last name.</string>
+    <string name="alert_message_empty_confirm_pass">Please enter confirm password.</string>
+    <string name="alert_msg_terms_privacy">Please agree our Terms Condition and Privacy Policy.</string>
+    <string name="alert_msg_unmatch_confirm_pass">New Password and Confirm password should be same.</string>
+    <string name="alert_msg_match_confirm_pass">Old Password and New password should be different.</string>
+    <string name="alert_msg_empty_state">Please enter state.</string>
+    <string name="alert_msg_select_photo">Please select photo.</string>
+    <string name="alert_msg_empty_city">Please enter city.</string>
+    <string name="alert_msg_select_sport">Please select sport.</string>
+    <string name="alert_msg_select_school_type">Please select school type.</string>
+    <string name="no_internet">Something wrong with internet</string>
+    <string name="internal_error">Internal Error.</string>
+    <string name="please_enter_caption">Please enter caption</string>
+    <string name="please_add_video">Please add video</string>
+
+</resources>

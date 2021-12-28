@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dim5"
+    android:paddingTop="@dimen/dim10"
+    android:paddingBottom="@dimen/dim10"
+    android:paddingEnd="@dimen/dim5">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_reciever_bg"
+        android:maxWidth="250dp"
+        android:padding="@dimen/dim10"
+        android:text=""
+        android:fontFamily="@font/rubik_regular"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="12:36 pm"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/sp12" />
+</RelativeLayout>

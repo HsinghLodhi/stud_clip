@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    tools:context=".ui.player.SubscriptionActivity">
+
+    <LinearLayout
+        android:id="@+id/llback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim16"
+        android:padding="@dimen/dim15">
+
+        <include layout="@layout/back_button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim20"
+        android:fontFamily="@font/rubik_semibold"
+        android:text="@string/subscription_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp32" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dim30">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim20"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/subscrption"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="bottom"
+                    android:text="$1.99"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp25" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="/month"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim5"
+                android:fontFamily="@font/rubik_regular"
+                android:text="subscription"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="@dimen/dim20"
+                android:layout_marginEnd="75dp"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="@string/txt_sub"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sp17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim15"
+                android:layout_marginTop="@dimen/dim20"
+                android:layout_marginEnd="@dimen/dim15"
+                android:background="@drawable/round_light_theme_bg"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/sp20"
+                android:paddingTop="@dimen/dim20"
+                android:paddingEnd="@dimen/dim10"
+                android:paddingBottom="@dimen/dim15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/txt_along"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dim15"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/dim30"
+                        android:layout_height="@dimen/dim30"
+                        app:srcCompat="@drawable/subs_create_profile" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim15"
+                        android:layout_marginTop="@dimen/dim5"
+                        android:fontFamily="@font/rubik_regular"
+                        android:gravity="center"
+                        android:text="@string/txt_sub1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dim15"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim30"
+                        android:layout_height="@dimen/dim30"
+                        app:srcCompat="@drawable/video_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim15"
+                        android:layout_marginTop="@dimen/dim5"
+                        android:fontFamily="@font/rubik_regular"
+                        android:gravity="center"
+                        android:text="@string/txt_sub2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dim15"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim30"
+                        android:layout_height="@dimen/dim30"
+                        app:srcCompat="@drawable/msg_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim15"
+                        android:layout_marginTop="@dimen/dim5"
+                        android:fontFamily="@font/rubik_regular"
+                        android:gravity="center"
+                        android:text="@string/txt_sub3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Subscribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim15"
+                android:layout_marginTop="@dimen/dim20"
+                android:layout_marginEnd="@dimen/dim15"
+                android:background="@drawable/round_red_background"
+                android:fontFamily="@font/rubik_semibold"
+                android:text="@string/subscription_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim15"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/restore_purchase"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="@dimen/dim15"
+                android:layout_marginEnd="@dimen/dim31"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="@string/by_clicking"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sp15" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

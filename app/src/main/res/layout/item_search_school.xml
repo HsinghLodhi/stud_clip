@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/dim15"
+    android:paddingEnd="@dimen/dim10"
+    android:paddingTop="@dimen/dim15"
+    android:id="@+id/rv_school_name"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/no_result_found_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/dim15"
+        android:layout_below="@+id/tv_school_name"/>
+</RelativeLayout>

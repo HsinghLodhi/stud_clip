@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:fillViewport="true"
+    tools:context=".ui.common.FiltersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dim15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/backll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="top"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/dim10"
+                android:paddingEnd="@dimen/dim10">
+
+                <include layout="@layout/back_button" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/rubik_medium"
+                android:paddingTop="@dimen/dim10"
+                android:text="@string/filters"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim40"
+            android:layout_marginTop="@dimen/dim30"
+            android:background="@drawable/round_light_theme_bg"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/searchImage"
+                android:background="@null"
+                android:hint="@string/search_by_name_hint_txt"
+                android:padding="@dimen/dim10"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey" />
+
+            <ImageView
+                android:id="@+id/searchImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dim12"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim20"
+            android:layout_marginBottom="@dimen/dim10"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/by_sport"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_light_theme_bg"
+                android:paddingStart="@dimen/dim6"
+
+                android:paddingTop="@dimen/dim6"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/dim6">
+
+                <Spinner
+                    android:id="@+id/spinnerBySport"
+                    android:theme="@style/MatchSpinnerTheme"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim20"
+            android:layout_marginBottom="@dimen/dim10"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/sort_by"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_light_theme_bg"
+                android:paddingStart="@dimen/dim6"
+                android:paddingTop="@dimen/dim6"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/dim6">
+
+                <Spinner
+                    android:id="@+id/spinnerSortBy"
+                    android:layout_width="match_parent"
+                    android:theme="@style/MatchSpinnerTheme"                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dim15"
+        android:layout_marginEnd="@dimen/dim15"
+        android:layout_marginBottom="@dimen/dim20"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvClearAll"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim50"
+            android:layout_marginEnd="@dimen/dim10"
+            android:layout_weight="1"
+            android:background="@drawable/round_bg_button_stroke"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="@string/clear_all"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvApplyFilter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim50"
+            android:layout_marginStart="@dimen/dim10"
+            android:layout_weight="1"
+            android:background="@drawable/round_bg_shape"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="@string/apply_filters"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
